@@ -137,7 +137,7 @@ def time_stats(df, month, day):
     if month == 'all':
         print("The most common month is:", months[df['month'].mode()[0] - 1])
     else:
-        print("There is no common month since you've selected", month)
+        print("There is no common month since you've selected.", month)
 
 
     # display the most common day of week
@@ -279,8 +279,6 @@ def dictionary_filter(df):
     """Creates a new dataframe, asks the user if they'd like to see individual
     trips and if yes, how many. It displays the information of the customers
     in the desired filter and count."""
-
-
 
     df_new = df.rename(columns = {'Unnamed: 0' : 'Customer ID'})
 
