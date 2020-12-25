@@ -287,12 +287,13 @@ def dictionary_filter(df):
             print(df_new.iloc[i,:])
             print()
             ask = input("Would you like to view more?")
-        n = int(input("How many customers would you like to view?\n"))
-        if n <= row:
-            for i in range(n):
-                print(df_new.iloc[i,:])
-                print()
-        else: print("Sorry, we don't have %d customers." % (n))
+            if ask.lower() == "yes":
+                n = int(input("How many customers would you like to view?\n"))
+                if n <= row:
+                    for i in range(n):
+                        print(df_new.iloc[i,:])
+                        print()
+                else: print("Sorry, we don't have %d customers." % (n))
 
 
 
