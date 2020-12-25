@@ -147,7 +147,7 @@ def time_stats(df, month, day):
     if day == 'all':
         print("The most common day of week is:", days[df['day_of_week'].mode()[0]])
     else:
-        print("There is no common day since you've selected", days[int(day)])
+        print("There is no common day since you've selected.", days[int(day)])
 
 
     # display the most common start hour
@@ -288,12 +288,17 @@ def dictionary_filter(df):
 
     if customer_view.lower() == "yes":
         print("Total customer count with this filter is", row)
-        n = int(input("How many customers would you like to view?\n"))
-        if n <= row:
-            for i in range(n):
-                print(df_new.iloc[i,:])
-                print()
-        else: print("Sorry, we don't have %d customers." % (n))
+        for i in range(5):
+            print(df_new.iloc[i,:])
+            print()
+            ask = input("Would you like to view more?")
+            if ask.lower() == "yes":
+                n = int(input("How many customers would you like to view?\n"))
+                if n <= row:
+                    for i in range(n):
+                        print(df_new.iloc[i,:])
+                        print()
+                else: print("Sorry, we don't have %d customers." % (n))
 
 
 
