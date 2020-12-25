@@ -1,15 +1,28 @@
 ### Date created
-Include the date you created this project and README file.
+26.12.2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+This project gets city, filter, month and day (if any filter selected) input from the user and provides various statistic based on data about bikeshare.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+It was a project for my Udacity course. Below are the links that I referenced to build this project:
 
+1. Found the convert function here:
+https://www.w3resource.com/python-exercises/python-basic-exercise-65.php
+
+2. Learned how to rename a column here:
+https://www.geeksforgeeks.org/how-to-rename-columns-in-pandas-dataframe/\
+
+
+3. Used the Pandas API Reference for date time functions:
+https://pandas.pydata.org/pandas-docs/stable/reference/series.html#time-series-related
