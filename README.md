@@ -5,7 +5,7 @@
 Bikeshare Project
 
 ### Description
-This project gets city, filter, month and day (if any filter selected) input from the user and provides various statistic based on data about bikeshare.
+This project gets city, filter, month and day (if any filter selected) input from the user and provides various statistic based on data about bikeshare in Washington, New York or Chicago like gender, age, the day/month people used it the most.
 
 ### Files used
 bikeshare.py
