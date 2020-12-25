@@ -273,7 +273,14 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+
 def dictionary_filter(df):
+
+    """Creates a new dataframe, asks the user if they'd like to see individual
+    trips and if yes, how many. It displays the information of the customers
+    in the desired filter and count."""
+
+
 
     df_new = df.rename(columns = {'Unnamed: 0' : 'Customer ID'})
 
