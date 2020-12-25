@@ -288,6 +288,10 @@ def dictionary_filter(df):
 
     if customer_view.lower() == "yes":
         print("Total customer count with this filter is", row)
+        for i in range(5):
+            print(df_new.iloc[i,:])
+            print()
+            ask = input("Would you like to view more?")
         n = int(input("How many customers would you like to view?\n"))
         if n <= row:
             for i in range(n):
